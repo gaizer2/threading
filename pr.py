@@ -14,13 +14,13 @@ def pr():
         print("Поток 2--", count2 * 100 / 2000000, "%  ", "Поток 1--", count1 * 100 / 10000000, "% ")
 
 def increase2(by):
-    global count2  # Declare count2 as global to modify the global variable
+    global count2 
     for i in range(by):
         count2 = i
         counter = random.randint(0, 100)
 
 def increase1(by):
-    global count1  # Declare count1 as global to modify the global variable
+    global count1  
     for i in range(by):
         count1 = i
         counter = random.randint(0, 100)
